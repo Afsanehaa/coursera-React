@@ -1,0 +1,37 @@
+/* Start Navbar Styles */
+.main-header{
+  width: 100%;
+  padding: 10px 5px;
+  direction: ltr;
+}
+.main-header__content {
+  @include flexStyle(space-between){
+    padding: 5px 45px;
+  }
+}
+.main-header__left {
+  .main-header__logo{
+    width:155px;
+  }
+}
+.main-header__right{
+  @include flexStyle(end){
+    width: 60%;
+  }
+  .main-header__menu {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    li{
+      margin-left: 30px;
+      position: relative;
+      a{
+        color: #46403b;
+        font-size: 14px;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+// /* Finish Navbar Styles */

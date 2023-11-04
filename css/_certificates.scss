@@ -1,0 +1,53 @@
+.certificates{
+    width: 100%;
+    align-content: center;
+}
+.main-certificates{
+    width: 100%;
+    height: 400px;
+   @include flexStyle(center){
+    flex-direction: column;
+   }
+}
+.certificates__topic{
+    width: 100%;
+  margin-bottom: 50px;
+  align-content: center;
+}
+.certificates__title{
+font-size: 26px;
+font-weight: 800;
+}
+.certificates__sub{
+  font-size: 15px;
+  color: $sub-color ;
+}
+.certificates__box{
+    width: 100%;
+    @include flexStyle(space-between){
+      flex-direction: row;
+    }
+    column-gap: 25px;
+}
+.certificate{
+  @include flexStyle(space-between){
+    flex-direction: column;
+  }
+width: 260px;
+height: 258px;
+border:0.5px solid #eeeeee ;
+border-radius:4px ;
+
+ img{
+   width: 260px;
+   height: 193px;
+ }
+ span{
+    margin-bottom: 18px;
+ }
+
+}
+
+
+
+

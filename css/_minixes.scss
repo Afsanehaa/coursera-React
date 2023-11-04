@@ -1,0 +1,6 @@
+@mixin flexStyle($justi){
+    display: flex;
+    align-items: center;
+    justify-content:$justi ;
+    @content;
+  }

@@ -1,0 +1,35 @@
+// @import "./courses";
+
+.new-courses{
+    height: 600px;
+    width: 100%;
+    margin-top: 140px;
+}
+.main-new-courses{
+    width: 100%;
+    @include flexStyle(space-between){
+         flex-direction: column;
+    }
+}
+.new-courses__topic{
+@include flexStyle(space-between){
+     flex-direction: column;
+}
+}
+.new-courses__topic-title{
+ font-size: 28px;
+ font-weight: 800;
+}
+.new-courses__topic-sub{
+font-size: 15px;
+color: $sub-color;
+}
+.new-courses__box{
+    width: 100%;
+    @include flexStyle(space-between){
+        flex-direction: row;
+    }
+    margin-top: 40px;
+    padding-bottom: 50px;
+    border-bottom: .5px solid $primary-color1;
+}

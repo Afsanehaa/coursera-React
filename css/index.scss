@@ -1,0 +1,105 @@
+@import "./variables";
+@import "./fonts";
+@import "./defaults";
+@import "./top-bar";
+@import './navbar.scss';
+@import "./minixes";
+@import "./Statistical";
+@import "./category";
+@import "./newCourses";
+@import "./certificates";
+@import "./courses";
+@import "./news.css";
+@import "./subscribe.scss";
+@import "./footer.scss";
+@import "./loginModal.scss";
+@import "./registerModal.scss";
+
+
+
+
+
+/* Start landing Styles */
+
+.landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/home-coursera-new.webp) no-repeat center center;
+
+    height: 520px;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 9rem 0;
+    color: $white-color;
+  }
+  .toggle{
+    width: 80px;
+    height: 80px;
+    background-color: #d00050;
+    position: sticky;
+    top: 25%;
+    right: 0;
+    opacity: 1;
+    z-index: 99;
+   h4{
+    color: $white-color;
+   }
+}
+.landing__title{
+    font-size: 3.4rem;
+    font-weight:bold;
+    color: $white-color;
+}  
+.landing__subtitle{
+    font-size: 1.8rem;
+    margin-top: 0.3rem;
+    color: $white-color;
+
+}
+.landing__searchbar{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    position:relative;
+    margin: 3.5rem auto;
+    background: none;
+    border:1px solid $white-color;
+    border-radius: 3px;
+    direction: ltr;
+}
+.landing__searchbar-input{
+    width: 100%;
+    padding: 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    background: none;
+    color: $white-color;
+    
+}
+.landing__searchbar-btn{
+    border: none;
+    background-color: $white-color;
+    position: absolute;
+    right: 0rem;
+    width: 6rem;
+    top: 0rem;
+    bottom: 0rem;
+    .landing__searchbar-icon{
+        color: #587a77;
+        font-size: large;
+    }
+}
+.landing-status{
+    direction: ltr;
+    @include flexStyle(center){
+
+    }
+}
+.landing-status__item{
+ color: $white-color;
+ margin:10px 35px;
+ font-size: large;
+ 
+}
+
+/* Finish landing Styles */
+
+
